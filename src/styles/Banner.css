@@ -1,0 +1,11 @@
+.container-banner{
+    width: 100%;
+    background-color: #B53131;
+    color:#FEE269;
+    padding: 2.5rem 5rem;
+}
+
+
+.container-banner span{
+    font-size: 2.5rem;
+}

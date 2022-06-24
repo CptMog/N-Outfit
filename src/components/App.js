@@ -1,11 +1,11 @@
-import './../styles/App.css'
+
+import Banner from './Banner.js';
+import './../styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <Banner />
     </div>
   );
 }
