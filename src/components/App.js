@@ -1,6 +1,7 @@
 
 import Banner from './Banner.js';
 import Filter from './Filter.js';
+import Cart from './Cart.js';
 import './../styles/App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Banner />
       <Filter />
+      <Cart />
     </div>
   );
 }

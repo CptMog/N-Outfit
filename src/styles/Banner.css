@@ -3,6 +3,16 @@
     background-color: #B53131;
     color:#FEE269;
     padding: 2.5rem 5rem;
+    position: relative;
+}
+
+.container-banner div{
+    background-color: #FEE269;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 

@@ -1,0 +1,68 @@
+.container-cart{
+    display:flex;
+    position: fixed;
+    top : 20rem;
+}
+
+.container-r-cart{
+    padding: 5rem;
+    height: 100vh;    
+    background-color: #B53131;
+}
+
+.open{
+    animation-duration: .5s;
+    animation-name: openCart;
+}
+
+.close{
+    animation-duration: .5s;
+    animation-name: closeCart;
+    margin-left: -22.8rem;
+}
+
+.inactif{
+    background-color: #B53131;
+    color: #FEE269; 
+}
+
+.actif{
+    background-color: #FEE269;
+    color: #B53131;
+}
+
+.container-l-cart{
+    cursor: pointer;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 7rem;
+    height: 4.1rem;
+    border-top-right-radius:1.5rem;
+    border-bottom-right-radius:1.5rem;
+    text-align: right;
+}
+
+#icon{
+    font-size: 2rem;
+}
+
+
+@keyframes openCart{
+    from {
+        margin-left: -22.8rem;
+      }
+    
+      to {
+        margin-left: 0;
+      }
+}
+
+@keyframes closeCart{
+    from {
+        margin-left: 0;
+      }
+    
+      to {
+        margin-left: -22.8rem;
+      }
+}
