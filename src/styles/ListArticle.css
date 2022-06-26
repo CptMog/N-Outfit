@@ -1,0 +1,9 @@
+.container-list-articles{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+}
