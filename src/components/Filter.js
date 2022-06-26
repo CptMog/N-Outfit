@@ -5,8 +5,9 @@ export default function Filter(){
     return(
         <div className="container-filter">
             <ul>
-                <li>Promos</li>
-                <li>TOPs</li>
+                <li>Jeans</li>
+                <li>Socks</li>
+                <li>T-shirt</li>
                 <li>Shorts</li>
                 <li>lots</li>
             </ul>

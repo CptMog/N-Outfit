@@ -1,10 +1,12 @@
 .container-filter{
     width: 100%;
+    margin: 0 auto;
     text-align: center;
     padding: .1rem;
     margin-top: 3rem;
-    background-color: #FFF5D1;
-    border: 2px solid #FCC11A;
+    background-color: #fff;
+    /* border: 2px solid #FCC11A; */
+    border-bottom: 1px solid #B53131;
 }
 .container-filter ul{
     padding: 0;
@@ -15,8 +17,14 @@
 
 .container-filter ul li{
     list-style: none;
-    color: #6006A6;
-    padding: 0 6rem;
+    color: #000;
+    padding: 0 4rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.container-filter ul li:hover{
+    color: #B53131;
+    transform: scale(1.1);
+    transition: all .3s;
 }
