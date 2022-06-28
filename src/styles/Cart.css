@@ -5,20 +5,53 @@
 }
 
 .container-r-cart{
-    padding: 5rem;
+    padding: .5rem 2rem;
+    width: 30rem;
     height: 100vh;    
     background-color: #B53131;
 }
 
+.container-r-cart .items{
+    width: 28rem;
+    height: 280px;
+    overflow: auto;
+    padding-left: 2rem;
+    background-color: #fff;
+}
+
+.container-r-cart ul{
+    padding: 0;
+}
+.container-r-cart ul li{
+    margin-bottom: 2rem;
+    /* font-size: 1.4rem; */
+    display: flex;
+    flex-direction: row;
+}
+
+.container-r-cart ul li span:first-child{
+    width: 15rem;
+    font-size: 1.3rem;
+}
+
+.container-r-cart ul li span:nth-child(2){
+   margin: 0 1rem;
+   font-weight: 800;
+}
+
 .open{
-    animation-duration: .5s;
-    animation-name: openCart;
+    /* animation-duration: .5s;
+    animation-name: openCart; */
+    margin-left: 0;
+    transition: all .5s;
 }
 
 .close{
-    animation-duration: .5s;
-    animation-name: closeCart;
-    margin-left: -22.8rem;
+    /* animation-duration: .5s;
+    animation-name: closeCart; */
+    /* margin-left: -18rem; */
+    margin-left: -30rem;
+    transition: all .5s;
 }
 
 .inactif{
@@ -36,6 +69,7 @@
     padding: 1rem;
     padding-right: 2rem;
     width: 7rem;
+    /* background-color: #fff; */
     height: 4.1rem;
     border-top-right-radius:1.5rem;
     border-bottom-right-radius:1.5rem;
@@ -49,7 +83,7 @@
 
 @keyframes openCart{
     from {
-        margin-left: -22.8rem;
+        margin-left: -17rem;
       }
     
       to {
@@ -59,10 +93,10 @@
 
 @keyframes closeCart{
     from {
-        margin-left: 0;
+        margin-left: 1rem;
       }
     
       to {
-        margin-left: -22.8rem;
+        margin-left: -17rem;
       }
 }
