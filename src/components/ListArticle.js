@@ -4,16 +4,22 @@ import { useState,useEffect } from "react";
 import './../styles/ListArticle.css'
 
 export default function ListArticle({cart,setCart}){
-    const [data,setData] = useState([]);
+    const [datas,setData] = useState([]);
 
     useEffect(() =>
-        fetchData(setData)
+        fetchData(setData) //fetch the data from the api in my constant
     ,[])
 
     return(
         <div className="container-list-articles">
-           {data.map((d)=> (
-                <Article key={`article-${d.id}`} name={d.name} price={d.price.current.text} img={d.imageUrl} value={d.price.current.value} cart={cart} setCart={setCart}/>
+           {datas.map((data)=> (
+                <Article key={`article-${data.id}`} 
+                         name={data.name} 
+                         img={data.imageUrl}
+                         price={data.price.current.value} 
+                         cart={cart} 
+                         setCart={setCart}
+                    />
            ))}
         </div>
     )

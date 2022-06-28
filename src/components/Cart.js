@@ -4,14 +4,14 @@ import { useState } from 'react';
 
 export default function Cart({cart,setCart}){
 
-    const [isOpen,setIsOpen] = useState(0);
-    function CalcTot(cart){
+    const [isOpen,setIsOpen] = useState(0); //state used for open and close the cart
+
+    function CalculateTotal(cart){
         let total =0;
 
-        cart.map((elem)=>{
+        for (const elem of cart) {
             total += elem.value * elem.amount;
-            return 0;
-        })
+        }
 
         return total;
     }
@@ -35,7 +35,7 @@ export default function Cart({cart,setCart}){
                             </ul>
                         </div>
                         <div className='priceTot'>
-                            <h2>Total : ${CalcTot(cart)}</h2>
+                            <h2>Total : ${CalculateTotal(cart)}</h2>
                         </div>
                     </div>
                     <div className="container-l-cart actif"  onClick={()=>{setIsOpen(0)}}>

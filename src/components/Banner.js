@@ -4,7 +4,7 @@ export default function Banner(){
     return(
         <div className="container-banner">
             <span>N-Outfit ☀</span>
-            <div></div>
+            <div></div> {/*this div is used for making design (c.f Banner.css)*/}
         </div>
     )
 }
