@@ -6,7 +6,7 @@ export default function Article({name,img,price,cart,setCart}){
 		const elemDouble = cart.find(elem =>elem.name === name)
         let elemsRestant = [];
 		if(elemDouble){
-			elemsRestant = cart.filter(elem =>elem.name !== name)
+			elemsRestant = cart.filter(elem => !(elem.name === name))
 			setCart([...elemsRestant,{name,value, amount: elemDouble.amount+1}])
 		}else{
 			setCart([...cart,{name,value, amount:1}])
