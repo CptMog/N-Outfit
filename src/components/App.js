@@ -6,13 +6,14 @@ import { useState } from 'react';
 
 function App() {
   const [cart,setCart] = useState([]);
+  const [fetchCategory,setFetchCategory] = useState('4213');
 
   return (
     <div className="App">
       <Banner />
-      <Filter />
+      <Filter setFetchCategory={setFetchCategory} />
       <Cart cart={cart} setCart={setCart}/>
-      <ListArticle cart={cart} setCart={setCart} />
+      <ListArticle cart={cart} setCart={setCart} dataCategory={fetchCategory} />
     </div>
   );
 }

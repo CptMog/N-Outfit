@@ -1,14 +1,14 @@
-import { fetchData } from "../datas/data.js";
+import { fetchProducts } from "../datas/data.js";
 import Article from "./Article";
 import { useState,useEffect } from "react";
 import './../styles/ListArticle.css'
 
-export default function ListArticle({cart,setCart}){
+export default function ListArticle({cart,setCart,dataCategory}){
     const [datas,setDatas] = useState([]);
 
     useEffect(() =>
-        fetchData(setDatas) //fetch the data from the api in my state datas
-    ,[])
+        fetchProducts(setDatas,dataCategory) //fetch the data from the api in my state datas
+    ,[dataCategory])
 
     return(
         <div className="container-list-articles">
